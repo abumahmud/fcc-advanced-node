@@ -31,7 +31,7 @@ module.exports = function (app, myDataBase) {
   passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: 'C:\Users\Administrator\Documents\boilerplate-advancednode'
+    callbackURL: 'https://fcc-advanced-node-trq5.onrender.com'
     },
     function (accessToken, refreshToken, profile, cb) {
       console.log(profile);
